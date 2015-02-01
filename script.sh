@@ -60,7 +60,7 @@ time -f %E ./pipeline/chromopainter.sh ${DATAPATH} ${PREFIX} $nsamples
 
 ## GLOBETROTTER
 printf "Running GLOBETROTTER..."
-time -f %E R < GLOBETROTTER.R ../data/xingnorel.param ../data/xingnorel.samples.out ../data/xingnorel.recomrate --no-save > globetrotter.log
+time -f %E R < GLOBETROTTER.R ${DATAPATH}${PREFIX}.param ${DATAPATH}${PREFIX}.samples.out ${DATAPATH}${PREFIX}.recomrate --no-save > ${DATAPATH}${PREFIX}.globetrotter.log
 
 
 
